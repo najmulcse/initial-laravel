@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="73610924-304a-4ab5-b006-dce4f7814352" name="Xampp Apache" url="http://log.dev">
+        <fileTransfer port="0" mountedRoot="J:\Laravel\htdocs" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

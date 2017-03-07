@@ -16,5 +16,10 @@ Route::get('/', function () {
 });
 
 Route::get('post','PostController@home');
+
 Route::get('/teacher','TeacherController@listT');
+
 Route::get('teacher/about','TeacherController@about');
+
+Route::get('cards','CardsController@index');
+Route::get('cards/{card}','CardsController@show');

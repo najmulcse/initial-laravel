@@ -37,6 +37,7 @@
     </head>
     <body>
         <div class="container">
+            <div class="title">Welcome to </div>
             <div class="content">
                 <div class="title">Smart group</div>
             </div>
