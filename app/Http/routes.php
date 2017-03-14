@@ -23,3 +23,5 @@ Route::get('teacher/about','TeacherController@about');
 
 Route::get('cards','CardsController@index');
 Route::get('cards/{card}','CardsController@show');
+
+Route::post('card/{id}/notes','NotesController@store');

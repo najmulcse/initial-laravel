@@ -9,7 +9,8 @@
 
         @foreach($cards as $card)
                 <div class="title">
-                    <li> {{$card->title}}</li>
+
+                    <a href="cards/{{$card->id}}" >  {{$card->title}} </a>
                 </div>
         @endforeach
      @endif

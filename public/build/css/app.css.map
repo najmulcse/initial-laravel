@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAEA;EACE,0BAAyB,EAC1B","file":"app.css","sourcesContent":["// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\nbody {\n  background-color:#2e3436;\n}"]}
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAMA;EAEE,gBAAgB;EAChB,4DAA2D,EAC5D","file":"app.css","sourcesContent":["// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\nbody {\n\n}\n\n.name{\n\n  font-size: 20px;\n  font-family:\"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}"]}
