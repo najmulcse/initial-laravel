@@ -18,8 +18,6 @@ class CardsController extends Controller
     }
     public function show(Card $card){
 
-
-
         return view('cards.show',compact('card'));
     }
 }
