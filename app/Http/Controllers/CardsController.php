@@ -18,6 +18,20 @@ class CardsController extends Controller
     }
     public function show(Card $card){
 
+        $card->load('notes.user');
         return view('cards.show',compact('card'));
     }
+
+    public function edit(){
+
+        return "Card edit page";
+    }
+
+    public function store(Request $request ){
+
+        $card=new Card;
+        $card->title=$request->title;
+        $card->save();
+        return back();
+}
 }

@@ -2,28 +2,42 @@
 
 @section('content')
     <div class="container">
-        <h2> {{$card->title}}</h2>
+
 
           <div class="row">
 
-              <div class="col-sm-3"></div>
-              <div class="col-sm-6 col-sm-offset-6">
+              <div class="col-md-6 col-md-offset-3">
+                  <h2> {{$card->title}}</h2>
+                          <ul class="list-group">
+                        @foreach($card->notes as $note)
+                            <li class="list-group-item">
+                                {{$note->body}}
+                                <a class="pull-right" href="#">{{$note->user->username}}</a>
+                            </li>
+                        @endforeach
+                          </ul>
+
+                  <hr>
+                 <h2>Add a new Note</h2>
                   <form method="POST" action="/card/{{$card->id}}/notes">
 
                       {{csrf_field()}}
 
-                          <ul>
-                        @foreach($card->notes as $note)
-                            <li class="form-control"> {{$note->body}}</li>
-                        @endforeach
-                          </ul>
                       <div class="form-group">
-                          <input class="form-control " type="text" name="note_body">
+                          <textarea class="form-control " type="text" name="body"  > {{old('body')}}</textarea>
                       </div>
                       <div class="form-group">
                           <button class="btn btn-primary">Add note</button>
                       </div>
                   </form>
+
+                  @if(count($errors))
+
+                      @foreach($errors->all() as $error)
+                          <li>{{$error}}</li>
+                          @endforeach
+                    @endif
+
               </div>
           </div>
 
